@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b86dc09352d758954975d0ce10ace66",
+    "content-hash": "238eb0bce7b194cae56137b4763ed1e4",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1603,6 +1603,59 @@
             }
         },
         {
+            "name": "drupal/bon_voyage",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bon_voyage.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bon_voyage-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "8e41c199d4b0e1161bd67831d7f7fd9a0e60f594"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1480577584",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander S.",
+                    "homepage": "https://www.drupal.org/user/428937",
+                    "email": "alex@saengo.com"
+                }
+            ],
+            "description": "Bon Voyage is a beautifully designed Drupal 8 Theme best suited for travel agencies, hotels, spas, and other travel-related online resources.",
+            "homepage": "https://www.drupal.org/sandbox/webtitan/2662716",
+            "keywords": [
+                "drupal",
+                "theme",
+                "twig"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/bon_voyage"
+            }
+        },
+        {
             "name": "drupal/captcha",
             "version": "1.0.0-beta1",
             "source": {
@@ -2308,6 +2361,99 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2019-07-16T16:24:57+00:00"
+        },
+        {
+            "name": "drupal/ctools",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ctools.git",
+                "reference": "8.x-3.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.2.zip",
+                "reference": "8.x-3.2",
+                "shasum": "d6da87239b64ba708a5977e7b33b1e009e36b091"
+            },
+            "require": {
+                "drupal/core": "^8.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.2",
+                    "datestamp": "1550728386",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Kris Vanderwater (EclipseGc)",
+                    "homepage": "https://www.drupal.org/u/eclipsegc",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jakob Perry (japerry)",
+                    "homepage": "https://www.drupal.org/u/japerry",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Tim Plunkett (tim.plunkett)",
+                    "homepage": "https://www.drupal.org/u/timplunkett",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "James Gilliland (neclimdul)",
+                    "homepage": "https://www.drupal.org/u/neclimdul",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Daniel Wehner (dawehner)",
+                    "homepage": "https://www.drupal.org/u/dawehner",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "merlinofchaos",
+                    "homepage": "https://www.drupal.org/user/26979"
+                },
+                {
+                    "name": "neclimdul",
+                    "homepage": "https://www.drupal.org/user/48673"
+                },
+                {
+                    "name": "sdboyer",
+                    "homepage": "https://www.drupal.org/user/146719"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                },
+                {
+                    "name": "tim.plunkett",
+                    "homepage": "https://www.drupal.org/user/241634"
+                }
+            ],
+            "description": "Provides a number of utility and helper APIs for Drupal developers and site builders.",
+            "homepage": "https://www.drupal.org/project/ctools",
+            "support": {
+                "source": "http://cgit.drupalcode.org/ctools",
+                "issues": "https://www.drupal.org/project/issues/ctools"
+            }
         },
         {
             "name": "drupal/dropzonejs",
@@ -3196,6 +3342,253 @@
             }
         },
         {
+            "name": "drupal/menu_breadcrumb",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_breadcrumb.git",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_breadcrumb-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "c68782d805b12b1d15d4e0bea2e16a76dac89bd2"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.9",
+                    "datestamp": "1554988685",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RyanPrice",
+                    "homepage": "https://www.drupal.org/user/873848"
+                },
+                {
+                    "name": "aaron",
+                    "homepage": "https://www.drupal.org/user/33420"
+                },
+                {
+                    "name": "gdevlugt",
+                    "homepage": "https://www.drupal.org/user/167273"
+                },
+                {
+                    "name": "rphair",
+                    "homepage": "https://www.drupal.org/user/3196607"
+                },
+                {
+                    "name": "vaibhavjain",
+                    "homepage": "https://www.drupal.org/user/1159692"
+                },
+                {
+                    "name": "xurizaemon",
+                    "homepage": "https://www.drupal.org/user/76026"
+                }
+            ],
+            "description": "Create breadcrumbs from nested menu titles and/or taxonomy membership.",
+            "homepage": "https://www.drupal.org/project/menu_breadcrumb",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_breadcrumb"
+            }
+        },
+        {
+            "name": "drupal/menu_link_attributes",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_link_attributes.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_link_attributes-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "6386cc2fcd7ae0d17d2a82d690866028b132055c"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1507195827",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "yannickoo",
+                    "homepage": "https://www.drupal.org/user/531118"
+                }
+            ],
+            "description": "Allows you to add attributes to menu links.",
+            "homepage": "http://drupal.org/project/menu_link_attributes",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/menu_link_attributes",
+                "issues": "http://drupal.org/project/issues/menu_link_attributes"
+            }
+        },
+        {
+            "name": "drupal/metatag",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/metatag.git",
+                "reference": "8.x-1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/metatag-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "230960752c5afa17337fb69bae853bccb1a26ecd"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/token": "^1.0"
+            },
+            "require-dev": {
+                "drupal/devel": "^1.0",
+                "drupal/metatag_dc": "*",
+                "drupal/metatag_open_graph": "*",
+                "drupal/page_manager": "^4.0",
+                "drupal/redirect": "^1.0",
+                "drupal/restui": "^1.0",
+                "drupal/schema_metatag": "^1.0",
+                "drupal/schema_web_page": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.9",
+                    "datestamp": "1563995941",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/640498/committers",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                }
+            ],
+            "description": "Manage meta tags for all entities.",
+            "homepage": "https://www.drupal.org/project/metatag",
+            "keywords": [
+                "Drupal",
+                "seo"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/metatag",
+                "issues": "http://drupal.org/project/issues/metatag"
+            }
+        },
+        {
+            "name": "drupal/pathauto",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/pathauto.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "ddfb047ae04ca2ddf475d65f6c09bceb44169e25"
+            },
+            "require": {
+                "drupal/core": "^8.5",
+                "drupal/ctools": "*",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1554239887",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Freso",
+                    "homepage": "https://www.drupal.org/user/27504"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                }
+            ],
+            "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
+            "homepage": "https://www.drupal.org/project/pathauto",
+            "support": {
+                "source": "https://git.drupalcode.org/project/pathauto"
+            }
+        },
+        {
             "name": "drupal/rabbit_hole",
             "version": "1.0.0-beta6",
             "source": {
@@ -3395,6 +3788,182 @@
             "support": {
                 "source": "https://git.drupal.org/project/recaptcha.git",
                 "issues": "https://www.drupal.org/project/issues/recaptcha"
+            }
+        },
+        {
+            "name": "drupal/redirect",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/redirect.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "4c7e0dc0ab0cbcc7d66e16cc684882c0eaa71c1c"
+            },
+            "require": {
+                "drupal/core": "~8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1561757585",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "pifagor",
+                    "homepage": "https://www.drupal.org/user/2375692"
+                }
+            ],
+            "description": "Allows users to redirect from old URLs to new URLs.",
+            "homepage": "https://www.drupal.org/project/redirect",
+            "support": {
+                "source": "https://git.drupalcode.org/project/redirect"
+            }
+        },
+        {
+            "name": "drupal/schema_metatag",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/schema_metatag.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/schema_metatag-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "5d0a677608e30a7c8ffb43d98759b19cf5be17f6"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/metatag": "*"
+            },
+            "require-dev": {
+                "drupal/metatag_views": "*",
+                "drupal/schema_article": "*",
+                "drupal/schema_organization": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1563033785",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "KarenS",
+                    "homepage": "https://www.drupal.org/user/45874"
+                }
+            ],
+            "description": "Metatag implementation of Schema.org structured data (JSON-LD)",
+            "homepage": "https://www.drupal.org/project/schema_metatag",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/schema_metatag",
+                "issues": "https://www.drupal.org/project/issues/schema_metatag"
+            }
+        },
+        {
+            "name": "drupal/shariff",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/shariff.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/shariff-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "a8617b351e4ea1a28c1069abfe427a776d141226"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1553186885",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Grienauer",
+                    "homepage": "https://www.drupal.org/user/80801"
+                },
+                {
+                    "name": "Nebel54",
+                    "homepage": "https://www.drupal.org/user/1781874"
+                },
+                {
+                    "name": "criz",
+                    "homepage": "https://www.drupal.org/user/71764"
+                },
+                {
+                    "name": "sboehlke",
+                    "homepage": "https://www.drupal.org/user/2018454"
+                }
+            ],
+            "description": "Integrating Shariff library and providing some options.",
+            "homepage": "https://www.drupal.org/project/shariff",
+            "keywords": [
+                "Drupal",
+                "Shariff"
+            ],
+            "support": {
+                "source": "https://drupal.org/project/shariff",
+                "issues": "https://drupal.org/project/issues/shariff"
             }
         },
         {
@@ -3687,6 +4256,121 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/taxonomy_manager",
                 "issues": "https://drupal.org/project/issues/taxonomy_manager"
+            }
+        },
+        {
+            "name": "drupal/token",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/token.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "6382a7e1aabbd8246f1117a26bf4916d285b401d"
+            },
+            "require": {
+                "drupal/core": "^8.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1537557481",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "eaton",
+                    "homepage": "https://www.drupal.org/user/16496"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "Provides a user interface for the Token API and some missing core tokens.",
+            "homepage": "https://www.drupal.org/project/token",
+            "support": {
+                "source": "https://git.drupalcode.org/project/token"
+            }
+        },
+        {
+            "name": "drupal/tokenuuid",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tokenuuid.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tokenuuid-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "03768ccae609dcadfc3001b535a5de113b9547d2"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1519844880",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jerome legendre",
+                    "homepage": "https://www.drupal.org/user/121479"
+                }
+            ],
+            "description": "Create an Universally unique identifier token for various entities.",
+            "homepage": "https://www.drupal.org/project/tokenuuid",
+            "support": {
+                "source": "https://git.drupalcode.org/project/tokenuuid"
             }
         },
         {
