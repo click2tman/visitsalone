@@ -1,9 +1,9 @@
 /**
  * @file
- * Visual styles for mt-video field in VisitSalone.
+ * Visual styles for tp-video field in VisitSalone.
  */
-.field--name-field-mt-video.field__item,
-.field--name-field-mt-video .field__item {
+.field--name-field-tp-video.field__item,
+.field--name-field-tp-video .field__item {
   margin: 20px 0;
 }
 .video-item > a {

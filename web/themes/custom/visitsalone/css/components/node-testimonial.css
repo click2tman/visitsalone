@@ -2,32 +2,32 @@
  * @file
  * Visual styles for VisitSalone's testimonial content type.
  */
-.node--type-mt-testimonial .field--name-field-mt-testimonial-image {
+.node--type-tp-testimonial .field--name-field-tp-testimonial-image {
   margin: 0 0 20px;
 }
-.node--type-mt-testimonial .field--name-field-mt-testimonial-image img {
+.node--type-tp-testimonial .field--name-field-tp-testimonial-image img {
   border-radius: 100%;
   max-width: 200px;
 }
-.node--type-mt-testimonial .field--name-body,
-.node--type-mt-testimonial .field--name-field-mt-subtitle,
-.node--type-mt-testimonial .field--name-field-mt-testimonial-image,
-.node--type-mt-testimonial .field--name-field-mt-testimonial-link {
+.node--type-tp-testimonial .field--name-body,
+.node--type-tp-testimonial .field--name-field-tp-subtitle,
+.node--type-tp-testimonial .field--name-field-tp-testimonial-image,
+.node--type-tp-testimonial .field--name-field-tp-testimonial-link {
   padding: 0 0 0 55px;
 }
-.node--type-mt-testimonial .field--name-field-mt-subtitle {
+.node--type-tp-testimonial .field--name-field-tp-subtitle {
   padding-bottom: 15px;
 }
-.node--type-mt-testimonial .field--name-body {
+.node--type-tp-testimonial .field--name-body {
   font-size: 15px;
   line-height: 1.5;
   padding-bottom: 10px;
 }
-.node--type-mt-testimonial .field--name-body p {
+.node--type-tp-testimonial .field--name-body p {
   padding: 0 0 10px;
   position: relative;
 }
-.node--type-mt-testimonial .field--name-body p:first-child:after {
+.node--type-tp-testimonial .field--name-body p:first-child:after {
   position: absolute;
   font-family: Georgia, Times New Roman, Serif;
   content: "“";
@@ -39,7 +39,7 @@
 }
 
 /*testimonial link field*/
-.node--type-mt-testimonial .field--name-field-mt-testimonial-link a {
+.node--type-tp-testimonial .field--name-field-tp-testimonial-link a {
   font-size: 16px;
   font-weight: 400;
   padding: 15px 23px;
@@ -55,14 +55,14 @@
   text-align: center;
   color: #ffffff;
 }
-.headings-wide-spacing-enabled .node--type-mt-testimonial .field--name-field-mt-testimonial-link a {
+.headings-wide-spacing-enabled .node--type-tp-testimonial .field--name-field-tp-testimonial-link a {
   letter-spacing: 0.25em;
   text-transform: uppercase;
 }
-.node--type-mt-testimonial .field--name-field-mt-testimonial-link a:hover {
+.node--type-tp-testimonial .field--name-field-tp-testimonial-link a:hover {
   color: #ffffff;
 }
-.region--light-typography .node--type-mt-testimonial .field--name-field-mt-testimonial-link a {
+.region--light-typography .node--type-tp-testimonial .field--name-field-tp-testimonial-link a {
   color: #ffffff;
   text-decoration: none;
   background-color: transparent;
@@ -70,7 +70,7 @@
   border-width: 1px;
   border-color: #ffffff;
 }
-.region--light-typography .node--type-mt-testimonial .field--name-field-mt-testimonial-link a:hover {
+.region--light-typography .node--type-tp-testimonial .field--name-field-tp-testimonial-link a:hover {
   background-color: #ffffff;
   border-color: #ffffff;
 }

@@ -2,7 +2,7 @@
  * @file
  * Visual styles for VisitSalone's service categories carousel.
  */
-.mt-carousel-service-categories .owl-item {
+.tp-carousel-service-categories .owl-item {
   text-align: center;
 }
 .view-service-categories-carousel .overlay-target-link a {
@@ -16,10 +16,10 @@
   display: block;
   font-size: 0;
 }
-.view-service-categories-carousel .mt-carousel-item {
+.view-service-categories-carousel .tp-carousel-item {
   padding-bottom: 10px;
 }
-.region--dark-typography .view-service-categories-carousel .mt-carousel-item {
+.region--dark-typography .view-service-categories-carousel .tp-carousel-item {
   background-color: #f6f6f6;
 }
 .view-service-categories-carousel .views-field-name h4 {
@@ -48,7 +48,7 @@
   }
 }
 @media (min-width: 1200px) {
-  .mt-carousel-service-categories .owl-stage-outer {
+  .tp-carousel-service-categories .owl-stage-outer {
     padding: 50px 0 50px;
   }
   .view-service-categories-carousel .views-field-description__value,
@@ -63,10 +63,10 @@
     z-index: 10;
     margin-top: 0px;
   }
-  .view-service-categories-carousel .active + .active + .active .mt-carousel-item {
+  .view-service-categories-carousel .active + .active + .active .tp-carousel-item {
     box-shadow: 0px 5px 15px rgba(60, 70, 80, 0.15), 0 15px 40px rgba(60, 70, 80, 0.08);
   }
-  .view-service-categories-carousel .active + .active + .active + .active .mt-carousel-item {
+  .view-service-categories-carousel .active + .active + .active + .active .tp-carousel-item {
     box-shadow: none;
   }
   .view-service-categories-carousel .active + .active + .active .views-field-description__value,

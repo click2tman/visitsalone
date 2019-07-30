@@ -21,10 +21,10 @@
 .region--light-typography .view-destinations-grid .views-field-title h5 a:hover {
   color: #ffffff;
 }
-.view-destinations-grid .views-field-field-mt-location i {
+.view-destinations-grid .views-field-field-tp-location i {
   margin-right: 5px;
 }
-.region--dark-typography .view-destinations-grid .views-field-field-mt-location i {
+.region--dark-typography .view-destinations-grid .views-field-field-tp-location i {
   color: #c0c0c0;
 }
 .view-destinations-grid .nav.nav-pills.filters {

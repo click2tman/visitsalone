@@ -2,21 +2,21 @@
  * @file
  * Visual styles for VisitSalone's service content type.
  */
-.node--type-mt-service .node__header {
+.node--type-tp-service .node__header {
   padding: 0;
 }
 
 /*page title*/
-.page-node-type-mt-service h1.page-title {
+.page-node-type-tp-service h1.page-title {
   font-weight: 500;
 }
-.layout-no-sidebars.page-node-type-mt-service .page-title {
+.layout-no-sidebars.page-node-type-tp-service .page-title {
   text-align: center;
 }
 
 /*labels*/
-.node--type-mt-service .field:not(.field--label-inline) .field__label,
-.node--type-mt-service h3.title {
+.node--type-tp-service .field:not(.field--label-inline) .field__label,
+.node--type-tp-service h3.title {
   font-size: 30px;
   font-weight: 500;
   padding-bottom: 10px;
@@ -27,31 +27,31 @@
 }
 
 /*subheader field*/
-.node--type-mt-service .field--name-field-mt-subheader-body {
+.node--type-tp-service .field--name-field-tp-subheader-body {
   font-size: 22px;
   padding: 0;
   line-height: 1.5;
   margin-bottom: 30px;
 }
-.layout-no-sidebars .node--type-mt-service .field--name-field-mt-subheader-body {
+.layout-no-sidebars .node--type-tp-service .field--name-field-tp-subheader-body {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .layout-no-sidebars .node--type-mt-service .field--name-field-mt-subheader-body {
+  .layout-no-sidebars .node--type-tp-service .field--name-field-tp-subheader-body {
     padding: 0 20%;
   }
 }
 
 /*image field*/
-.node--type-mt-service .field--name-field-image {
+.node--type-tp-service .field--name-field-image {
   margin-bottom: 30px;
 }
-.node--type-mt-service.node--view-mode-teaser .images-container {
+.node--type-tp-service.node--view-mode-teaser .images-container {
   margin-bottom: 15px;
 }
 
 /*price field*/
-.node--type-mt-service .field--name-field-mt-price {
+.node--type-tp-service .field--name-field-tp-price {
   font-size: 18px;
   margin: 30px 0 5px;
   font-weight: 500;
@@ -79,10 +79,10 @@
 }
 
 /*buy link field*/
-.node--type-mt-service .field--name-field-mt-buy-link {
+.node--type-tp-service .field--name-field-tp-buy-link {
   text-align: center;
 }
-.node--type-mt-service .field--name-field-mt-buy-link a {
+.node--type-tp-service .field--name-field-tp-buy-link a {
   font-size: 16px;
   font-weight: 400;
   padding: 15px 23px;
@@ -98,14 +98,14 @@
   text-align: center;
   color: #ffffff;
 }
-.headings-wide-spacing-enabled .node--type-mt-service .field--name-field-mt-buy-link a {
+.headings-wide-spacing-enabled .node--type-tp-service .field--name-field-tp-buy-link a {
   letter-spacing: 0.25em;
   text-transform: uppercase;
 }
-.node--type-mt-service .field--name-field-mt-buy-link a:hover {
+.node--type-tp-service .field--name-field-tp-buy-link a:hover {
   color: #ffffff;
 }
-.region--light-typography .node--type-mt-service .field--name-field-mt-buy-link a {
+.region--light-typography .node--type-tp-service .field--name-field-tp-buy-link a {
   color: #ffffff;
   text-decoration: none;
   background-color: transparent;
@@ -113,23 +113,23 @@
   border-width: 1px;
   border-color: #ffffff;
 }
-.region--light-typography .node--type-mt-service .field--name-field-mt-buy-link a:hover {
+.region--light-typography .node--type-tp-service .field--name-field-tp-buy-link a:hover {
   background-color: #ffffff;
   border-color: #ffffff;
 }
 
 /*lists*/
-.node--type-mt-service .list-unstyled li {
+.node--type-tp-service .list-unstyled li {
   margin-bottom: 5px;
 }
 
 /* Amenities paragraph item styling */
-.paragraph--type--mt-room-amenity {
+.paragraph--type--tp-room-amenity {
   position: relative;
   padding-left: 23px;
   margin-bottom: 10px;
 }
-.paragraph--type--mt-room-amenity i {
+.paragraph--type--tp-room-amenity i {
   color: #46c82d;
   position: absolute;
   left: 0px;
@@ -137,12 +137,12 @@
   width: 22px;
   font-size: 12px;
 }
-.paragraph--type--mt-room-amenity i.fa-times,
-.paragraph--type--mt-room-amenity .muted {
+.paragraph--type--tp-room-amenity i.fa-times,
+.paragraph--type--tp-room-amenity .muted {
   color: #a8a8a8;
 }
 
 /* Room features */
-.paragraph--type--mt-room-features span {
+.paragraph--type--tp-room-features span {
   margin-left: 5px;
 }

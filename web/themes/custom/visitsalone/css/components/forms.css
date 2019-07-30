@@ -213,15 +213,15 @@ input[type="checkbox"] {
 }
 
 /*room contact form page*/
-.block-system-main-block .room-contact--page .form-item-mt-room-contact-check-in,
-.block-system-main-block .room-contact--page .form-item-mt-room-contact-check-out {
+.block-system-main-block .room-contact--page .form-item-tp-room-contact-check-in,
+.block-system-main-block .room-contact--page .form-item-tp-room-contact-check-out {
   width: 49%;
   float: left;
 }
-.block-system-main-block .room-contact--page .form-item-mt-room-contact-check-out {
+.block-system-main-block .room-contact--page .form-item-tp-room-contact-check-out {
   margin-left: 2%;
 }
-.block-system-main-block .room-contact--page .form-item-mt-room-contact-check-out + .form-item {
+.block-system-main-block .room-contact--page .form-item-tp-room-contact-check-out + .form-item {
   clear: both;
 }
 
@@ -241,21 +241,21 @@ input[type="checkbox"] {
 .room-contact--standalone .form-item {
   margin: 0;
 }
-.room-contact--standalone .form-item-mt-room-contact-check-in,
-.room-contact--standalone .form-item-mt-room-contact-check-out,
-.room-contact--standalone .form-item-mt-room-contact-guests {
+.room-contact--standalone .form-item-tp-room-contact-check-in,
+.room-contact--standalone .form-item-tp-room-contact-check-out,
+.room-contact--standalone .form-item-tp-room-contact-guests {
   width: 33.33%;
   padding: 0 10px;
   float: left;
 }
-.room-contact--standalone .form-item-mt-room-contact-email,
-.room-contact--standalone .form-item-mt-room-contact-name {
+.room-contact--standalone .form-item-tp-room-contact-email,
+.room-contact--standalone .form-item-tp-room-contact-name {
   width: 50%;
   padding: 0 10px;
   float: left;
 }
-.room-contact--standalone .form-item-mt-room-contact-guests + .form-item,
-.room-contact--standalone .form-item-mt-room-contact-email + .form-item,
+.room-contact--standalone .form-item-tp-room-contact-guests + .form-item,
+.room-contact--standalone .form-item-tp-room-contact-email + .form-item,
 .room-contact--standalone .form-actions {
   clear: both;
 }
@@ -264,11 +264,11 @@ input[type="checkbox"] {
   margin: 0;
 }
 @media (max-width: 767px) {
-  .room-contact--standalone .form-item-mt-room-contact-check-in,
-  .room-contact--standalone .form-item-mt-room-contact-check-out,
-  .room-contact--standalone .form-item-mt-room-contact-guests,
-  .room-contact--standalone .form-item-mt-room-contact-email,
-  .room-contact--standalone .form-item-mt-room-contact-name {
+  .room-contact--standalone .form-item-tp-room-contact-check-in,
+  .room-contact--standalone .form-item-tp-room-contact-check-out,
+  .room-contact--standalone .form-item-tp-room-contact-guests,
+  .room-contact--standalone .form-item-tp-room-contact-email,
+  .room-contact--standalone .form-item-tp-room-contact-name {
     width: 100%;
     padding: 0 10px;
   }

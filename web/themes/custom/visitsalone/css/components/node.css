@@ -53,19 +53,19 @@
 }
 
 /*Subheader*/
-.field--name-field-mt-subheader-body {
+.field--name-field-tp-subheader-body {
   font-size: 15px;
   line-height: 1.6;
 }
 
 /*subtitle*/
-.field--name-field-mt-subtitle {
+.field--name-field-tp-subtitle {
   font-size: 18px;
   line-height: 1.66;
   font-weight: 400;
   padding-bottom: 15px;
 }
-.region--dark-typography .field--name-field-mt-subtitle {
+.region--dark-typography .field--name-field-tp-subtitle {
   color: #363636;
 }
 

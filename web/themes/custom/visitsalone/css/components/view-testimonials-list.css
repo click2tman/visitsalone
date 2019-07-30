@@ -7,7 +7,7 @@
 }
 .view-testimonials-list .views-field-body,
 .view-testimonials-list .views-field-title,
-.view-testimonials-list .views-field-field-mt-subtitle {
+.view-testimonials-list .views-field-field-tp-subtitle {
   padding: 0 0 0 55px;
 }
 .view-testimonials-list .views-field-body {
@@ -46,10 +46,10 @@
   letter-spacing: 0.25em;
   text-transform: uppercase;
 }
-.view-testimonials-list .views-field-field-mt-subtitle {
+.view-testimonials-list .views-field-field-tp-subtitle {
   font-size: 11px;
   text-transform: uppercase;
 }
-.region--dark-typography .view-testimonials-list .views-field-field-mt-subtitle {
+.region--dark-typography .view-testimonials-list .views-field-field-tp-subtitle {
   color: #363636;
 }

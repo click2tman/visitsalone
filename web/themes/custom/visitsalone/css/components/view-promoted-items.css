@@ -30,12 +30,12 @@
 .region--light-typography .view-promoted-items .views-field-title h5 a:hover {
   color: #ffffff;
 }
-.view-promoted-items .views-field-field-mt-price {
+.view-promoted-items .views-field-field-tp-price {
   font-size: 18px;
   margin: 0px 0 10px 0;
   font-weight: 700;
 }
-.region--light-typography .view-promoted-items .views-field-field-mt-price {
+.region--light-typography .view-promoted-items .views-field-field-tp-price {
   color: #ffffff;
 }
 .view-promoted-items .views-field-link {

@@ -5,8 +5,8 @@
 .rev_slider_wrapper {
   text-align: center;
 }
-.container-fluid .view-mt-slideshow,
-.container-fluid .field--mt-main-slideshow-block {
+.container-fluid .view-tp-slideshow,
+.container-fluid .field--tp-main-slideshow-block {
   margin-left: -15px;
   margin-right: -15px;
 }

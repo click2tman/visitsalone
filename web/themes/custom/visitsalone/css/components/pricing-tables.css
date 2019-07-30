@@ -94,7 +94,7 @@
 .pricing-table--blue .pricing-table-header {
   background-color: #0288d0;
 }
-.pricing-table--blue .views-field-field-mt-most-popular {
+.pricing-table--blue .views-field-field-tp-most-popular {
   background-color: #08a7fd;
 }
 .pricing-table--blue a.button {
@@ -125,7 +125,7 @@
 .pricing-table--gold .pricing-table-header {
   background-color: #79725d;
 }
-.pricing-table--gold .views-field-field-mt-most-popular {
+.pricing-table--gold .views-field-field-tp-most-popular {
   background-color: #948C75;
 }
 .pricing-table--gold a.button {
@@ -156,7 +156,7 @@
 .pricing-table--gray .pricing-table-header {
   background-color: #252525;
 }
-.pricing-table--gray .views-field-field-mt-most-popular {
+.pricing-table--gray .views-field-field-tp-most-popular {
   background-color: #767676;
 }
 .pricing-table--gray a.button {
@@ -187,7 +187,7 @@
 .pricing-table--green .pricing-table-header {
   background-color: #378b3a;
 }
-.pricing-table--green .views-field-field-mt-most-popular {
+.pricing-table--green .views-field-field-tp-most-popular {
   background-color: #46af49;
 }
 .pricing-table--green a.button {
@@ -218,7 +218,7 @@
 .pricing-table--khaki .pricing-table-header {
   background-color: #74741b;
 }
-.pricing-table--khaki .views-field-field-mt-most-popular {
+.pricing-table--khaki .views-field-field-tp-most-popular {
   background-color: #9E9D24;
 }
 .pricing-table--khaki a.button {
@@ -249,7 +249,7 @@
 .pricing-table--lime .pricing-table-header {
   background-color: #99cc00;
 }
-.pricing-table--lime .views-field-field-mt-most-popular {
+.pricing-table--lime .views-field-field-tp-most-popular {
   background-color: #91c200;
 }
 .pricing-table--lime a.button {
@@ -280,7 +280,7 @@
 .pricing-table--night-blue .pricing-table-header {
   background-color: #537f92;
 }
-.pricing-table--night-blue .views-field-field-mt-most-popular {
+.pricing-table--night-blue .views-field-field-tp-most-popular {
   background-color: #6c99ac;
 }
 .pricing-table--night-blue a.button {
@@ -311,7 +311,7 @@
 .pricing-table--orange .pricing-table-header {
   background-color: #ff6e00;
 }
-.pricing-table--orange .views-field-field-mt-most-popular {
+.pricing-table--orange .views-field-field-tp-most-popular {
   background-color: #ff8b33;
 }
 .pricing-table--orange a.button {
@@ -342,7 +342,7 @@
 .pricing-table--pink .pricing-table-header {
   background-color: #d14785;
 }
-.pricing-table--pink .views-field-field-mt-most-popular {
+.pricing-table--pink .views-field-field-tp-most-popular {
   background-color: #db70a0;
 }
 .pricing-table--pink a.button {
@@ -373,7 +373,7 @@
 .pricing-table--purple .pricing-table-header {
   background-color: #5b3488;
 }
-.pricing-table--purple .views-field-field-mt-most-popular {
+.pricing-table--purple .views-field-field-tp-most-popular {
   background-color: #4f2d76;
 }
 .pricing-table--purple a.button {
@@ -404,7 +404,7 @@
 .pricing-table--red .pricing-table-header {
   background-color: #d2131d;
 }
-.pricing-table--red .views-field-field-mt-most-popular {
+.pricing-table--red .views-field-field-tp-most-popular {
   background-color: #bb111a;
 }
 .pricing-table--red a.button {

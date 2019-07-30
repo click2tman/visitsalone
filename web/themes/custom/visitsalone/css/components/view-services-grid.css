@@ -21,15 +21,15 @@
 .region--light-typography .view-services-grid .views-field-title h5 a:hover {
   color: #ffffff;
 }
-.view-services-grid .views-field-field-mt-price {
+.view-services-grid .views-field-field-tp-price {
   font-size: 18px;
   margin: 0px 0 10px 0;
   font-weight: 500;
 }
-.view-services-grid .views-field-field-mt-location i {
+.view-services-grid .views-field-field-tp-location i {
   margin-right: 5px;
 }
-.region--dark-typography .view-services-grid .views-field-field-mt-location i {
+.region--dark-typography .view-services-grid .views-field-field-tp-location i {
   color: #c0c0c0;
 }
 .view-services-grid .nav.nav-pills.filters {

@@ -8,7 +8,7 @@
 }
 
 /*carousel item*/
-.view-team-members-carousel .mt-carousel-item {
+.view-team-members-carousel .tp-carousel-item {
   padding: 0 15px;
 }
 .view-team-members-carousel h4 {
@@ -23,7 +23,7 @@
     float: left;
   }
   .view-team-members-carousel .views-field-field-image ~ .views-field-title,
-  .view-team-members-carousel .views-field-field-image ~ .views-field-field-mt-subtitle,
+  .view-team-members-carousel .views-field-field-image ~ .views-field-field-tp-subtitle,
   .view-team-members-carousel .views-field-field-image ~ .icons-list,
   .view-team-members-carousel .views-field-field-image ~ .views-field-body {
     margin-left: 200px;

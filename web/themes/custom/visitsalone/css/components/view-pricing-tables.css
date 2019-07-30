@@ -45,7 +45,7 @@
   text-decoration: none;
   color: #ffffff;
 }
-.view-pricing-tables .views-field-field-mt-price {
+.view-pricing-tables .views-field-field-tp-price {
   padding: 0 0 20px 0;
   font-weight: 700;
   font-size: 40px;
@@ -54,10 +54,10 @@
   list-style: none;
   margin: 0;
 }
-.view-pricing-tables .views-row:not(.most-popular) .views-field-field-mt-most-popular {
+.view-pricing-tables .views-row:not(.most-popular) .views-field-field-tp-most-popular {
   display: none;
 }
-.view-pricing-tables .pricing-table .views-field-field-mt-most-popular {
+.view-pricing-tables .pricing-table .views-field-field-tp-most-popular {
   position: absolute;
   font-size: 12px;
   line-height: 1.4;
@@ -72,7 +72,7 @@
   text-transform: uppercase;
   font-weight: 400;
 }
-.region--light-typography .view-pricing-tables .pricing-table .views-field-field-mt-most-popular {
+.region--light-typography .view-pricing-tables .pricing-table .views-field-field-tp-most-popular {
   background-color: rgba(255, 255, 255, 0.2);
 }
 .view-pricing-tables .pricing-table .item-list li {
@@ -113,7 +113,7 @@
   .view-pricing-tables .views-row.most-popular .pricing-table {
     margin-top: 70px;
   }
-  .view-pricing-tables .pricing-table .views-field-field-mt-most-popular {
+  .view-pricing-tables .pricing-table .views-field-field-tp-most-popular {
     top: -50px;
     right: -15px;
     left: 50%;

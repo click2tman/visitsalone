@@ -37,7 +37,7 @@
 .fixed-header-enabled.onscroll .header__section ul.menu {
   padding-top: 10px;
 }
-.fixed-header-enabled.onscroll .header__section .field--mt-dropdowns-block {
+.fixed-header-enabled.onscroll .header__section .field--tp-dropdowns-block {
   padding-top: 14px;
 }
 @media (max-width: 991px) {

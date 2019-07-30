@@ -2,14 +2,14 @@
  * @file
  * Visual styles for VisitSalone's dropdowns.
  */
-.field--mt-dropdowns-block {
+.field--tp-dropdowns-block {
   text-align: right;
 }
-.header__section .field--mt-dropdowns-block {
+.header__section .field--tp-dropdowns-block {
   padding-top: 7px;
 }
 @media (min-width: 768px) {
-  .page-container-border-enabled .header-container .container-fluid .header-third .field--mt-dropdowns-block {
+  .page-container-border-enabled .header-container .container-fluid .header-third .field--tp-dropdowns-block {
     padding-right: 15px;
   } 
 }

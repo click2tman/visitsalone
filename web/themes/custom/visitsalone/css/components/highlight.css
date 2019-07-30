@@ -1,6 +1,6 @@
 /**
  * @file
- * Visual styles for mt_highlight paragraphs type in VisitSalone.
+ * Visual styles for tp_highlight paragraphs type in VisitSalone.
  */
 .field--type-entity-reference-revisions > .field__item {
   clear: both;
@@ -13,18 +13,18 @@
   display: table;
   content: " ";
 }
-.paragraph--type--mt-highlight {
+.paragraph--type--tp-highlight {
   padding: 1.8em 0;
 }
-.paragraph--type--mt-highlight:before,
-.paragraph--type--mt-highlight:after {
+.paragraph--type--tp-highlight:before,
+.paragraph--type--tp-highlight:after {
   display: table;
   content: " ";
 }
-.paragraph--type--mt-highlight:after {
+.paragraph--type--tp-highlight:after {
   clear: both;
 }
-.field--name-field-mt-highlight-title {
+.field--name-field-tp-highlight-title {
   font-size: 28px;
   line-height: 1.20;
   margin: 0 0 10px 0;
@@ -32,10 +32,10 @@
   font-weight: 700;
   color: #363636;
 }
-.field__item .field--name-field-mt-highlight-body:after {
+.field__item .field--name-field-tp-highlight-body:after {
   clear: none;
 }
-.field--name-field-mt-highlight-link a {
+.field--name-field-tp-highlight-link a {
   color: #ffffff;
   font-size: 16px;
   padding: 13px 25px;
@@ -58,40 +58,40 @@
   text-align: center;
   background-color: transparent;
 }
-.field--name-field-mt-highlight-link a:hover {
+.field--name-field-tp-highlight-link a:hover {
   color: #ffffff;
 }
 @media (max-width: 767px) {
-  .field--name-field-mt-highlight-title {
+  .field--name-field-tp-highlight-title {
     padding-top: 20px;
   }
 }
-@media (min-width: 768px) { 
-  .paragraph--type--mt-highlight .field--name-field-mt-highlight-image {
+@media (min-width: 768px) {
+  .paragraph--type--tp-highlight .field--name-field-tp-highlight-image {
     width: 48%;
   }
-  .field__item:nth-child(even) .field--name-field-mt-highlight-image {
+  .field__item:nth-child(even) .field--name-field-tp-highlight-image {
     float: left;
   }
-  .field__item:nth-child(even) .field--name-field-mt-highlight-title,
-  .field__item:nth-child(even) .field--name-field-mt-highlight-body,
-  .field__item:nth-child(even) .field--name-field-mt-highlight-link {
+  .field__item:nth-child(even) .field--name-field-tp-highlight-title,
+  .field__item:nth-child(even) .field--name-field-tp-highlight-body,
+  .field__item:nth-child(even) .field--name-field-tp-highlight-link {
     margin-left: 52%;
   }
-  .field__item:nth-child(odd) .field--name-field-mt-highlight-image {
+  .field__item:nth-child(odd) .field--name-field-tp-highlight-image {
     float: right;
   }
-  .field__item:nth-child(odd) .field--name-field-mt-highlight-title,
-  .field__item:nth-child(odd) .field--name-field-mt-highlight-body,
-  .field__item:nth-child(odd) .field--name-field-mt-highlight-link {
+  .field__item:nth-child(odd) .field--name-field-tp-highlight-title,
+  .field__item:nth-child(odd) .field--name-field-tp-highlight-body,
+  .field__item:nth-child(odd) .field--name-field-tp-highlight-link {
     margin-right: 52%;
   }
-  .field--name-field-mt-highlight-link a {
+  .field--name-field-tp-highlight-link a {
     margin-bottom: 10px;
   }
 }
-@media (min-width: 768px) and (max-width: 1200px) { 
-  .field--name-field-mt-highlight-title {
+@media (min-width: 768px) and (max-width: 1200px) {
+  .field--name-field-tp-highlight-title {
     margin-bottom: 0;
   }
 }
