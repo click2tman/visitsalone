@@ -3,7 +3,7 @@
  * @file
  * VisitSalone's theme override for the block entity refernece field for the dropdowns powered custom block
  *
- * @see visitsalone_preprocess_field__block_content__mt_tabs_block()
+ * @see visitsalone_preprocess_field__block_content__tp_tabs_block()
  */
 #}
 {%
@@ -12,7 +12,7 @@
     'field--name-' ~ field_name|clean_class,
     'field--type-' ~ field_type|clean_class,
     'field--label-' ~ label_display,
-    'field--mt-dropdowns-block',
+    'field--tp-dropdowns-block',
     'clearfix',
   ]
 %}
@@ -30,10 +30,10 @@
     <div class="btn-group" role="group">
       <div class="dropdown">
         <button class="dropdown-trigger" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          {% if item.content['#paragraph'].get('field_mt_dropdown_trigger_icon').value %}
-            <i class="fa {{ item.content['#paragraph'].get('field_mt_dropdown_trigger_icon').value }}">
+          {% if item.content['#paragraph'].get('field_tp_dropdown_trigger_icon').value %}
+            <i class="fa {{ item.content['#paragraph'].get('field_tp_dropdown_trigger_icon').value }}">
               <span class="sr-only">
-                {{item.content['#paragraph'].get('field_mt_dropdown_trigger_icon').value}} dropdown trigger
+                {{item.content['#paragraph'].get('field_tp_dropdown_trigger_icon').value}} dropdown trigger
               </span>
             </i>
           {% endif %}

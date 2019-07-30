@@ -929,19 +929,19 @@ function visitsalone_preprocess_block(&$variables) {
 }
 
 /**
- * Implements hook_preprocess_HOOK() for field--block-content--mt-google-maps.html.twig.
+ * Implements hook_preprocess_HOOK() for field--block-content--tp-google-maps.html.twig.
  */
-function visitsalone_preprocess_field__block_content__mt_google_maps(&$variables) {
+function visitsalone_preprocess_field__block_content__tp_google_maps(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/google-maps-init';
-  $variables['field_mt_map_zoom_value'] = $variables['element']['#object']->get('field_mt_map_zoom')->first()->getValue()['value'];
+  $variables['field_tp_map_zoom_value'] = $variables['element']['#object']->get('field_tp_map_zoom')->first()->getValue()['value'];
 
   $paragraphs = $variables['element']['#items']->referencedEntities();
   if (!empty($paragraphs)) {
     $locations = "";
     foreach ($paragraphs as $key => $paragraph) {
-      $location_latitude = $paragraph->toArray()['field_mt_ml_latitude'][0]['value'];
-      $location_longitude = $paragraph->toArray()['field_mt_ml_longitude'][0]['value'];
-      $location_name = $paragraph->toArray()['field_mt_ml_location_name'][0]['value'];
+      $location_latitude = $paragraph->toArray()['field_tp_ml_latitude'][0]['value'];
+      $location_longitude = $paragraph->toArray()['field_tp_ml_longitude'][0]['value'];
+      $location_name = $paragraph->toArray()['field_tp_ml_location_name'][0]['value'];
       $locations = "["."\"$location_name\", ".$location_latitude.", ".$location_longitude.", ".$key."]".", ".$locations;
     }
     $locations = trim($locations);
@@ -953,19 +953,19 @@ function visitsalone_preprocess_field__block_content__mt_google_maps(&$variables
 /**
  * Implements hook_preprocess_HOOK() for field--field-mt-destinations.html.twig.
  */
-function visitsalone_preprocess_field__field_mt_destinations(&$variables) {
-  if (!empty($variables['element']['#object']->get('field_mt_map_zoom')->first())) {
-    $variables['field_mt_map_zoom_value'] = (int) $variables['element']['#object']->get('field_mt_map_zoom')->first()->getValue()['value'];
+function visitsalone_preprocess_field__field_tp_destinations(&$variables) {
+  if (!empty($variables['element']['#object']->get('field_tp_map_zoom')->first())) {
+    $variables['field_tp_map_zoom_value'] = (int) $variables['element']['#object']->get('field_tp_map_zoom')->first()->getValue()['value'];
   } else {
-    $variables['field_mt_map_zoom_value'] = 0;
+    $variables['field_tp_map_zoom_value'] = 0;
   }
   $paragraphs = $variables['element']['#items']->referencedEntities();
   if (!empty($paragraphs)) {
     $locations = "";
     foreach ($paragraphs as $key => $paragraph) {
-      $location_latitude = $paragraph->toArray()['field_mt_ml_latitude'][0]['value'];
-      $location_longitude = $paragraph->toArray()['field_mt_ml_longitude'][0]['value'];
-      $location_name = $paragraph->toArray()['field_mt_ml_location_name'][0]['value'];
+      $location_latitude = $paragraph->toArray()['field_tp_ml_latitude'][0]['value'];
+      $location_longitude = $paragraph->toArray()['field_tp_ml_longitude'][0]['value'];
+      $location_name = $paragraph->toArray()['field_tp_ml_location_name'][0]['value'];
       $locations = "["."\"$location_name\", ".$location_latitude.", ".$location_longitude.", ".$key."]".", ".$locations;
     }
     $locations = trim($locations);
@@ -975,49 +975,49 @@ function visitsalone_preprocess_field__field_mt_destinations(&$variables) {
 }
 
 /**
- * Implements hook_preprocess_HOOK() for field--block-content--mt-background-image-block.html.twig.
+ * Implements hook_preprocess_HOOK() for field--block-content--tp-background-image-block.html.twig.
  */
-function visitsalone_preprocess_field__block_content__mt_background_image_block(&$variables) {
-  $variables['background_image_uri'] = $variables['element']['#object']->get('field_mt_background_image')->first()->entity->getFileUri();
-  $variables['bg_image_overlay_opacity'] = $variables['element']['#object']->get('field_mt_bg_image_opacity')->first()->getValue()['value']/100;
-  $variables['bg_image_overlay_color'] = $variables['element']['#object']->get('field_mt_bg_image_color')->first()->getValue()['value'];
-  $variables['bg_image_layout_mode'] = $variables['element']['#object']->get('field_mt_bg_image_layout_mode')->first()->getValue()['value'];
-  if (!empty($variables['element']['#object']->get('field_mt_bg_image_positioning')->first()) && $variables['element']['#object']->get('field_mt_bg_image_positioning')->first()->getValue()['value'] == "1") {
-    $variables['field_mt_bg_image_positioning_value'] = "background-image--attachment-fixed";
+function visitsalone_preprocess_field__block_content__tp_background_image_block(&$variables) {
+  $variables['background_image_uri'] = $variables['element']['#object']->get('field_tp_background_image')->first()->entity->getFileUri();
+  $variables['bg_image_overlay_opacity'] = $variables['element']['#object']->get('field_tp_bg_image_opacity')->first()->getValue()['value']/100;
+  $variables['bg_image_overlay_color'] = $variables['element']['#object']->get('field_tp_bg_image_color')->first()->getValue()['value'];
+  $variables['bg_image_layout_mode'] = $variables['element']['#object']->get('field_tp_bg_image_layout_mode')->first()->getValue()['value'];
+  if (!empty($variables['element']['#object']->get('field_tp_bg_image_positioning')->first()) && $variables['element']['#object']->get('field_tp_bg_image_positioning')->first()->getValue()['value'] == "1") {
+    $variables['field_tp_bg_image_positioning_value'] = "background-image--attachment-fixed";
   } else {
-    $variables['field_mt_bg_image_positioning_value'] = "background-image--attachment-scroll";
+    $variables['field_tp_bg_image_positioning_value'] = "background-image--attachment-scroll";
   }
-  if (!empty($variables['element']['#object']->get('field_mt_bg_block_paddings')->first()) && $variables['element']['#object']->get('field_mt_bg_block_paddings')->first()->getValue()['value'] == "1") {
-    $variables['field_mt_bg_block_paddings_value'] = "background-image-block--no-paddings";
+  if (!empty($variables['element']['#object']->get('field_tp_bg_block_paddings')->first()) && $variables['element']['#object']->get('field_tp_bg_block_paddings')->first()->getValue()['value'] == "1") {
+    $variables['field_tp_bg_block_paddings_value'] = "background-image-block--no-paddings";
   } else {
-    $variables['field_mt_bg_block_paddings_value'] = "";
+    $variables['field_tp_bg_block_paddings_value'] = "";
   }
 }
 
 /**
- * Implements hook_preprocess_HOOK() for field--block-content--mt-background-video-block.html.twig.
+ * Implements hook_preprocess_HOOK() for field--block-content--tp-background-video-block.html.twig.
  */
-function visitsalone_preprocess_field__block_content__mt_background_video_block(&$variables) {
-  if ($variables['element']['#object']->get('field_mt_bv_video_mp4')->first()) {
-    $variables['background_video_mp4_uri'] = $variables['element']['#object']->get('field_mt_bv_video_mp4')->first()->entity->getFileUri();
+function visitsalone_preprocess_field__block_content__tp_background_video_block(&$variables) {
+  if ($variables['element']['#object']->get('field_tp_bv_video_mp4')->first()) {
+    $variables['background_video_mp4_uri'] = $variables['element']['#object']->get('field_tp_bv_video_mp4')->first()->entity->getFileUri();
   }
-  if ($variables['element']['#object']->get('field_mt_bv_video_webm')->first()) {
-    $variables['background_video_webm_uri'] = $variables['element']['#object']->get('field_mt_bv_video_webm')->first()->entity->getFileUri();
+  if ($variables['element']['#object']->get('field_tp_bv_video_webm')->first()) {
+    $variables['background_video_webm_uri'] = $variables['element']['#object']->get('field_tp_bv_video_webm')->first()->entity->getFileUri();
   }
-  $variables['background_video_poster_uri'] = $variables['element']['#object']->get('field_mt_bv_poster')->first()->entity->getFileUri();
-  $variables['background_video_overlay_opacity'] = $variables['element']['#object']->get('field_mt_bv_overlay_opacity')->first()->getValue()['value']/100;
-  $variables['background_video_overlay_color'] = $variables['element']['#object']->get('field_mt_bv_overlay_color')->first()->getValue()['value'];
-  $variables['background_video_layout_mode'] = $variables['element']['#object']->get('field_mt_bv_layout_mode')->first()->getValue()['value'];
+  $variables['background_video_poster_uri'] = $variables['element']['#object']->get('field_tp_bv_poster')->first()->entity->getFileUri();
+  $variables['background_video_overlay_opacity'] = $variables['element']['#object']->get('field_tp_bv_overlay_opacity')->first()->getValue()['value']/100;
+  $variables['background_video_overlay_color'] = $variables['element']['#object']->get('field_tp_bv_overlay_color')->first()->getValue()['value'];
+  $variables['background_video_layout_mode'] = $variables['element']['#object']->get('field_tp_bv_layout_mode')->first()->getValue()['value'];
 }
 
 /**
- * Implements hook_preprocess_HOOK() for field--block-content--mt-fancy-linked-images-block.html.twig.
+ * Implements hook_preprocess_HOOK() for field--block-content--tp-fancy-linked-images-block.html.twig.
  */
-function visitsalone_preprocess_field__block_content__mt_fancy_linked_images_block(&$variables) {
+function visitsalone_preprocess_field__block_content__tp_fancy_linked_images_block(&$variables) {
   $paragraphs = $variables['element']['#items']->referencedEntities();
   if (!empty($paragraphs)) {
     foreach ($paragraphs as $key => $paragraph) {
-      $fancy_image = $paragraph->toArray()['field_mt_fli_image'];
+      $fancy_image = $paragraph->toArray()['field_tp_fli_image'];
       if (!empty($fancy_image[0])) {
         $file = File::load($fancy_image[0]['target_id']);
         $path = $file->getFileUri();
@@ -1044,22 +1044,22 @@ function visitsalone_preprocess_field__block_content__mt_fancy_linked_images_blo
 }
 
 /**
- * Implements hook_preprocess_HOOK() for field--block-content--mt-main-slideshow-block.html.twig.
+ * Implements hook_preprocess_HOOK() for field--block-content--tp-main-slideshow-block.html.twig.
  */
-function visitsalone_preprocess_field__block_content__mt_main_slideshow_block(&$variables) {
+function visitsalone_preprocess_field__block_content__tp_main_slideshow_block(&$variables) {
   $paragraphs = $variables['element']['#items']->referencedEntities();
   if (!empty($paragraphs)) {
     foreach ($paragraphs as $key => $paragraph) {
-      $slide_image = $paragraph->toArray()['field_mt_ms_slide_image'];
-      $slide_caption = $paragraph->toArray()['field_mt_ms_slide_caption'];
-      $slide_caption_color = $paragraph->toArray()['field_mt_ms_slide_caption_color'];
-      $slide_caption_opacity = $paragraph->toArray()['field_mt_ms_slide_caption_opac'];
-      $slide_title = $paragraph->toArray()['field_mt_ms_slide_title'];
-      $slide_links = $paragraph->toArray()['field_mt_ms_slide_link'];
-      $slide_image = $paragraph->toArray()['field_mt_ms_slide_image'];
-      $slide_vimeo_id = $paragraph->toArray()['field_mt_ms_slide_vimeo_id'];
-      $slide_youtube_id = $paragraph->toArray()['field_mt_ms_slide_youtube_id'];
-      $slide_video_volume = $paragraph->toArray()['field_mt_ms_slide_volume'];
+      $slide_image = $paragraph->toArray()['field_tp_ms_slide_image'];
+      $slide_caption = $paragraph->toArray()['field_tp_ms_slide_caption'];
+      $slide_caption_color = $paragraph->toArray()['field_tp_ms_slide_caption_color'];
+      $slide_caption_opacity = $paragraph->toArray()['field_tp_ms_slide_caption_opac'];
+      $slide_title = $paragraph->toArray()['field_tp_ms_slide_title'];
+      $slide_links = $paragraph->toArray()['field_tp_ms_slide_link'];
+      $slide_image = $paragraph->toArray()['field_tp_ms_slide_image'];
+      $slide_vimeo_id = $paragraph->toArray()['field_tp_ms_slide_vimeo_id'];
+      $slide_youtube_id = $paragraph->toArray()['field_tp_ms_slide_youtube_id'];
+      $slide_video_volume = $paragraph->toArray()['field_tp_ms_slide_volume'];
 
       if (!empty($slide_image[0])) {
         $file = File::load($slide_image[0]['target_id']);
@@ -1118,79 +1118,79 @@ function visitsalone_preprocess_field__block_content__mt_main_slideshow_block(&$
       }
     }
   }
-  if ($variables['element']['#object']->get('field_mt_main_slideshow_layout')->first()->getValue()['value'] == "fullwidth") {
-    $variables['field_mt_main_slideshow_layout_value'] = "auto";
-    $variables['field_mt_main_slideshow_autoheight'] = "off";
+  if ($variables['element']['#object']->get('field_tp_main_slideshow_layout')->first()->getValue()['value'] == "fullwidth") {
+    $variables['field_tp_main_slideshow_layout_value'] = "auto";
+    $variables['field_tp_main_slideshow_autoheight'] = "off";
   } else {
-    $variables['field_mt_main_slideshow_layout_value'] = "fullscreen";
-    $variables['field_mt_main_slideshow_autoheight'] = "on";
+    $variables['field_tp_main_slideshow_layout_value'] = "fullscreen";
+    $variables['field_tp_main_slideshow_autoheight'] = "on";
   }
-  if (!empty($variables['element']['#object']->get('field_mt_ms_initial_height')->first())) {
-    $variables['field_mt_ms_initial_height_value'] = (int) $variables['element']['#object']->get('field_mt_ms_initial_height')->first()->getValue()['value'];
+  if (!empty($variables['element']['#object']->get('field_tp_ms_initial_height')->first())) {
+    $variables['field_tp_ms_initial_height_value'] = (int) $variables['element']['#object']->get('field_tp_ms_initial_height')->first()->getValue()['value'];
   } else {
-    $variables['field_mt_ms_initial_height_value'] = 650;
-  }
-
-  if (!empty($variables['element']['#object']->get('field_mt_ms_effect')->first())) {
-    $variables['field_mt_ms_effect_value'] = $variables['element']['#object']->get('field_mt_ms_effect')->first()->getValue()['value'];
-  } else {
-    $variables['field_mt_ms_effect_value'] = "fade";
+    $variables['field_tp_ms_initial_height_value'] = 650;
   }
 
-  if (!empty($variables['element']['#object']->get('field_mt_ms_effect_duration')->first())) {
-    $variables['field_mt_ms_effect_duration_value'] = (int) $variables['element']['#object']->get('field_mt_ms_effect_duration')->first()->getValue()['value']*1000;
+  if (!empty($variables['element']['#object']->get('field_tp_ms_effect')->first())) {
+    $variables['field_tp_ms_effect_value'] = $variables['element']['#object']->get('field_tp_ms_effect')->first()->getValue()['value'];
   } else {
-    $variables['field_mt_ms_effect_duration_value'] = 9000;
+    $variables['field_tp_ms_effect_value'] = "fade";
   }
 
-  if (!empty($variables['element']['#object']->get('field_mt_ms_touch_swipe_nav')->first()) && $variables['element']['#object']->get('field_mt_ms_touch_swipe_nav')->first()->getValue()['value'] == "1") {
-    $variables['field_mt_ms_touch_swipe_nav_value'] = "on";
+  if (!empty($variables['element']['#object']->get('field_tp_ms_effect_duration')->first())) {
+    $variables['field_tp_ms_effect_duration_value'] = (int) $variables['element']['#object']->get('field_tp_ms_effect_duration')->first()->getValue()['value']*1000;
   } else {
-    $variables['field_mt_ms_touch_swipe_nav_value'] = "off";
+    $variables['field_tp_ms_effect_duration_value'] = 9000;
   }
 
-  if (!empty($variables['element']['#object']->get('field_mt_ms_ignore_header_height')->first()) && $variables['element']['#object']->get('field_mt_ms_ignore_header_height')->first()->getValue()['value'] == "1") {
-    $variables['field_mt_ms_ignore_header_height_value'] = ".header-container, .toolbar-tray-horizontal";
+  if (!empty($variables['element']['#object']->get('field_tp_ms_touch_swipe_nav')->first()) && $variables['element']['#object']->get('field_tp_ms_touch_swipe_nav')->first()->getValue()['value'] == "1") {
+    $variables['field_tp_ms_touch_swipe_nav_value'] = "on";
   } else {
-    $variables['field_mt_ms_ignore_header_height_value'] = ".toolbar-tray-horizontal";
+    $variables['field_tp_ms_touch_swipe_nav_value'] = "off";
   }
 
-  if (!empty($variables['element']['#object']->get('field_mt_ms_navigation_style')->first()) && $variables['element']['#object']->get('field_mt_ms_navigation_style')->first()->getValue()['value'] == "bullets") {
-    $variables['field_mt_ms_bullets_enable'] = true;
-    $variables['field_mt_ms_tabs_enable'] = false;
-  } elseif (!empty($variables['element']['#object']->get('field_mt_ms_navigation_style')->first()) && $variables['element']['#object']->get('field_mt_ms_navigation_style')->first()->getValue()['value'] == "titles_carousel") {
-    $variables['field_mt_ms_bullets_enable'] = false;
-    $variables['field_mt_ms_tabs_enable'] = true;
+  if (!empty($variables['element']['#object']->get('field_tp_ms_ignore_header_height')->first()) && $variables['element']['#object']->get('field_tp_ms_ignore_header_height')->first()->getValue()['value'] == "1") {
+    $variables['field_tp_ms_ignore_header_height_value'] = ".header-container, .toolbar-tray-horizontal";
   } else {
-    $variables['field_mt_ms_bullets_enable'] = false;
-    $variables['field_mt_ms_tabs_enable'] = false;
+    $variables['field_tp_ms_ignore_header_height_value'] = ".toolbar-tray-horizontal";
   }
 
-  if (!empty($variables['element']['#object']->get('field_mt_ms_bullets_position')->first())) {
-    $variables['field_mt_ms_bullets_position_value'] = $variables['element']['#object']->get('field_mt_ms_bullets_position')->first()->getValue()['value'];
+  if (!empty($variables['element']['#object']->get('field_tp_ms_navigation_style')->first()) && $variables['element']['#object']->get('field_tp_ms_navigation_style')->first()->getValue()['value'] == "bullets") {
+    $variables['field_tp_ms_bullets_enable'] = true;
+    $variables['field_tp_ms_tabs_enable'] = false;
+  } elseif (!empty($variables['element']['#object']->get('field_tp_ms_navigation_style')->first()) && $variables['element']['#object']->get('field_tp_ms_navigation_style')->first()->getValue()['value'] == "titles_carousel") {
+    $variables['field_tp_ms_bullets_enable'] = false;
+    $variables['field_tp_ms_tabs_enable'] = true;
   } else {
-    $variables['field_mt_ms_bullets_position_value'] = "center";
+    $variables['field_tp_ms_bullets_enable'] = false;
+    $variables['field_tp_ms_tabs_enable'] = false;
   }
 
-  if (!empty($variables['element']['#object']->get('field_mt_ms_background_opacity')->first())) {
-    $variables['field_mt_ms_background_opacity_value'] = (int) $variables['element']['#object']->get('field_mt_ms_background_opacity')->first()->getValue()['value']/100;
+  if (!empty($variables['element']['#object']->get('field_tp_ms_bullets_position')->first())) {
+    $variables['field_tp_ms_bullets_position_value'] = $variables['element']['#object']->get('field_tp_ms_bullets_position')->first()->getValue()['value'];
   } else {
-    $variables['field_mt_ms_background_opacity_value'] = 0;
+    $variables['field_tp_ms_bullets_position_value'] = "center";
+  }
+
+  if (!empty($variables['element']['#object']->get('field_tp_ms_background_opacity')->first())) {
+    $variables['field_tp_ms_background_opacity_value'] = (int) $variables['element']['#object']->get('field_tp_ms_background_opacity')->first()->getValue()['value']/100;
+  } else {
+    $variables['field_tp_ms_background_opacity_value'] = 0;
   }
 }
 
 /**
  * Implements hook_preprocess_HOOK() for field--field-mt-video-gallery-slides.html.twig.
  */
-function visitsalone_preprocess_field__field_mt_video_gallery_slides(&$variables) {
+function visitsalone_preprocess_field__field_tp_video_gallery_slides(&$variables) {
   $paragraphs = $variables['element']['#items']->referencedEntities();
   if (!empty($paragraphs)) {
     foreach ($paragraphs as $key => $paragraph) {
-      $vimeo_id = $paragraph->toArray()['field_mt_vgs_vimeo_id'];
-      $youtube_id = $paragraph->toArray()['field_mt_vgs_youtube_id'];
-      $volume = $paragraph->toArray()['field_mt_vgs_volume'];
-      $slide_title = $paragraph->toArray()['field_mt_vgs_slide_title'];
-      $thumbnail = $paragraph->toArray()['field_mt_vgs_thumbnail'];
+      $vimeo_id = $paragraph->toArray()['field_tp_vgs_vimeo_id'];
+      $youtube_id = $paragraph->toArray()['field_tp_vgs_youtube_id'];
+      $volume = $paragraph->toArray()['field_tp_vgs_volume'];
+      $slide_title = $paragraph->toArray()['field_tp_vgs_slide_title'];
+      $thumbnail = $paragraph->toArray()['field_tp_vgs_thumbnail'];
       if (!empty($vimeo_id[0])) {
         $variables['items'][$key]['vimeo_id'] = $vimeo_id[0]['value'];
       } else {
@@ -1252,7 +1252,7 @@ function visitsalone_preprocess_menu(&$variables) {
 /**
  * Implements hook_preprocess_HOOK() for highlight paragraphs type views.
  */
-function visitsalone_preprocess_paragraph__mt_highlight(&$variables) {
+function visitsalone_preprocess_paragraph__tp_highlight(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/highlight';
   $variables['#attached']['library'][] = 'visitsalone/magnific-popup-field-highlight-image-init';
 }
@@ -1260,49 +1260,49 @@ function visitsalone_preprocess_paragraph__mt_highlight(&$variables) {
 /**
  * Implements hook_preprocess_HOOK() for benefits views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_benefits(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_benefits(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-benefits-grid';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for products views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_products(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_products(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-products-grid';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for products list views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_products_list(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_products_list(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-products-list';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for products masonry layout views.
  */
-function visitsalone_preprocess_views_view_list__mt_products_masonry(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_products_masonry(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/isotope-masonry-init';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for products carousel views.
  */
-function visitsalone_preprocess_views_view_list__mt_products_carousel(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_products_carousel(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/owl-carousel-products-init';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for product tags views block.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_product_tags(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_product_tags(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-product-tags';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for team members grid views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_team_members_grid(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_team_members_grid(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-promoted-items';
   $variables['#attached']['library'][] = 'visitsalone/view-team-members-grid';
 }
@@ -1310,35 +1310,35 @@ function visitsalone_preprocess_views_view_unformatted__mt_team_members_grid(&$v
 /**
  * Implements hook_preprocess_HOOK() for team members grid 2 views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_team_members_grid_2(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_team_members_grid_2(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-team-members-grid-2';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for team members list views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_team_members_list(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_team_members_list(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-titles-list';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for team members carousel views.
  */
-function visitsalone_preprocess_views_view_list__mt_team_members_carousel(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_team_members_carousel(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/owl-carousel-team-members-init';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for related nodes carousel views.
  */
-function visitsalone_preprocess_views_view_list__mt_related_nodes_carousel(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_related_nodes_carousel(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/owl-carousel-related-nodes-init';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for collections carousel views.
  */
-function visitsalone_preprocess_views_view_list__mt_collections_carousel(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_collections_carousel(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/owl-carousel-collections-init';
   $variables['#attached']['library'][] = 'visitsalone/view-collections-image-overlay';
 }
@@ -1346,7 +1346,7 @@ function visitsalone_preprocess_views_view_list__mt_collections_carousel(&$varia
 /**
  * Implements hook_preprocess_HOOK() for collections grid views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_collections_grid(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_collections_grid(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-collections-grid';
   $variables['#attached']['library'][] = 'visitsalone/view-collections-image-overlay';
 }
@@ -1354,7 +1354,7 @@ function visitsalone_preprocess_views_view_unformatted__mt_collections_grid(&$va
 /**
  * Implements hook_preprocess_HOOK() for products masonry layout views.
  */
-function visitsalone_preprocess_views_view_list__mt_collections_masonry(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_collections_masonry(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/isotope-masonry-init';
   $variables['#attached']['library'][] = 'visitsalone/view-collections-image-overlay';
 }
@@ -1362,140 +1362,140 @@ function visitsalone_preprocess_views_view_list__mt_collections_masonry(&$variab
 /**
  * Implements hook_preprocess_HOOK() for brands carousel views.
  */
-function visitsalone_preprocess_views_view_list__mt_brands_carousel(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_brands_carousel(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/owl-carousel-brands-init';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for brands grid views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_brands_grid(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_brands_grid(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-brands-grid';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for destinations grid views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_destinations_grid(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_destinations_grid(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-destinations-grid';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for services views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_services(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_services(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-services-grid';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for service category views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_service_category(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_service_category(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-services-grid';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for services list views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_services_list(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_services_list(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-items-list';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for service categories carousel views.
  */
-function visitsalone_preprocess_views_view_list__mt_service_categories_carousel(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_service_categories_carousel(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/owl-carousel-service-categories-init';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for showcases views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_showcases(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_showcases(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-showcases-grid-2';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for showcases grid style 2 views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_showcases_grid_style_2(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_showcases_grid_style_2(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-showcases-grid';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for showcases list views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_showcases_list(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_showcases_list(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-titles-list';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for promoted posts views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_promoted_posts(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_promoted_posts(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-promoted-items';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for promoted posts carousel views.
  */
-function visitsalone_preprocess_views_view_list__mt_promoted_posts_carousel(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_promoted_posts_carousel(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/owl-carousel-promoted-posts-init';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for videos views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_videos(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_videos(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-promoted-items';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for popular tags views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_popular_tags(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_popular_tags(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-popular-taxonomy';
 }
 
 /**
 * Implements hook_preprocess_HOOK() for articles grid views.
 */
-function visitsalone_preprocess_views_view_unformatted__mt_articles_grid(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_articles_grid(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-articles-grid';
 }
 
 /**
 * Implements hook_preprocess_HOOK() for articles list views.
 */
-function visitsalone_preprocess_views_view_unformatted__mt_articles_list(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_articles_list(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-items-list';
 }
 
 /**
 * Implements hook_preprocess_HOOK() for articles list 2 views.
 */
-function visitsalone_preprocess_views_view_unformatted__mt_articles_list_2(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_articles_list_2(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-articles-list-2';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for articles carousel views.
  */
-function visitsalone_preprocess_views_view_list__mt_articles_carousel(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_articles_carousel(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/owl-carousel-articles-init';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for latest items views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_latest(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_latest(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-latest-items';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for full width slideshow.
  */
-function visitsalone_preprocess_views_view_list__mt_slideshow_full_width__block(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_slideshow_full_width__block(&$variables) {
   $variables['mt_setting']['rs_slideshow_fullwidth_effect'] = theme_get_setting('rs_slideshow_fullwidth_effect');
   $current_language_id = \Drupal::languageManager()->getCurrentLanguage()->getId();
   foreach ($variables['rows'] as $key => $row) {
@@ -1510,7 +1510,7 @@ function visitsalone_preprocess_views_view_list__mt_slideshow_full_width__block(
 /**
  * Implements hook_preprocess_HOOK() for full screen slideshow.
  */
-function visitsalone_preprocess_views_view_list__mt_slideshow_full_screen__block(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_slideshow_full_screen__block(&$variables) {
   $variables['mt_setting']['rs_slideshow_fullscreen_effect'] = theme_get_setting('rs_slideshow_fullscreen_effect');
   //Load transparent-header library
   $transparent_header_state = theme_get_setting('transparent_header_state');
@@ -1530,7 +1530,7 @@ function visitsalone_preprocess_views_view_list__mt_slideshow_full_screen__block
 /**
  * Implements hook_preprocess_HOOK() for boxed width slideshow.
  */
-function visitsalone_preprocess_views_view_list__mt_slideshow_boxed_width__block(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_slideshow_boxed_width__block(&$variables) {
   $variables['mt_setting']['rs_slideshow_boxedwidth_effect'] = theme_get_setting('rs_slideshow_boxedwidth_effect');
   $current_language_id = \Drupal::languageManager()->getCurrentLanguage()->getId();
   foreach ($variables['rows'] as $key => $row) {
@@ -1545,14 +1545,14 @@ function visitsalone_preprocess_views_view_list__mt_slideshow_boxed_width__block
 /**
  * Implements hook_preprocess_HOOK() for internal banner slideshow.
  */
-function visitsalone_preprocess_views_view_list__mt_internal_banner__block(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_internal_banner__block(&$variables) {
   $variables['mt_setting']['rs_slideshow_internal_effect'] = theme_get_setting('rs_slideshow_internal_effect');
 }
 
 /**
  * Implements hook_preprocess_HOOK() for grid isotope layout.
  */
-function visitsalone_preprocess_views_view_list__mt_isotope(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_isotope(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/isotope-filters-grid-init';
   $variables['#attached']['library'][] = 'visitsalone/view-promoted-items';
   $variables['#attached']['library'][] = 'visitsalone/view-services-grid';
@@ -1561,28 +1561,28 @@ function visitsalone_preprocess_views_view_list__mt_isotope(&$variables) {
 /**
  * Implements hook_preprocess_HOOK() for testimonials list views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_testimonials(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_testimonials(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-testimonials-list';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for testimonials grid views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_testimonials_grid(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_testimonials_grid(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-testimonials-grid';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for testimonials grid 2 views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_testimonials_grid_2(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_testimonials_grid_2(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-testimonials-grid-2';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for testimonials masonry views.
  */
-function visitsalone_preprocess_views_view_list__mt_testimonials_masonry(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_testimonials_masonry(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-testimonials-grid';
   $variables['#attached']['library'][] = 'visitsalone/view-testimonials-masonry';
 }
@@ -1590,21 +1590,21 @@ function visitsalone_preprocess_views_view_list__mt_testimonials_masonry(&$varia
 /**
  * Implements hook_preprocess_HOOK() for testimonials carousel views.
  */
-function visitsalone_preprocess_views_view_list__mt_testimonials_carousel(&$variables) {
+function visitsalone_preprocess_views_view_list__tp_testimonials_carousel(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/owl-carousel-testimonials-init';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for pricing tables.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_pricing_tables(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_pricing_tables(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-pricing-tables';
 }
 
 /**
  * Implements hook_preprocess_HOOK() for testimonials list views.
  */
-function visitsalone_preprocess_views_view_unformatted__mt_destinations_directory(&$variables) {
+function visitsalone_preprocess_views_view_unformatted__tp_destinations_directory(&$variables) {
   $variables['#attached']['library'][] = 'visitsalone/view-destinations-directory';
 }
 
@@ -1640,7 +1640,7 @@ function visitsalone_preprocess_field__entity_reference(&$variables) {
   $variables['entity_reference_target_type'] = $variables['element']['#items']->getItemDefinition()->getSetting('target_type');
 }
 
-function visitsalone_preprocess_field__block_content__mt_tabs_block(&$variables){
+function visitsalone_preprocess_field__block_content__tp_tabs_block(&$variables){
   $variables['entity_reference_target_type'] = $variables['element']['#items']->getItemDefinition()->getSetting('target_type');
   $block_uuid = $variables['element']['#object']->toArray()['uuid'][0]['value'];
   $blocks = $variables['element']['#items']->referencedEntities();
@@ -1656,7 +1656,7 @@ function visitsalone_preprocess_field__block_content__mt_tabs_block(&$variables)
   }
 }
 
-function visitsalone_preprocess_field__block_content__mt_fancy_tabs_block(&$variables){
+function visitsalone_preprocess_field__block_content__tp_fancy_tabs_block(&$variables){
   $variables['entity_reference_target_type'] = $variables['element']['#items']->getItemDefinition()->getSetting('target_type');
   $block_uuid = $variables['element']['#object']->toArray()['uuid'][0]['value'];
   $blocks = $variables['element']['#items']->referencedEntities();
@@ -1671,7 +1671,7 @@ function visitsalone_preprocess_field__block_content__mt_fancy_tabs_block(&$vari
   }
 }
 
-function visitsalone_preprocess_field__block_content__mt_media_tabs_block(&$variables){
+function visitsalone_preprocess_field__block_content__tp_media_tabs_block(&$variables){
   $current_language_id = \Drupal::languageManager()->getCurrentLanguage()->getId();
   $variables['entity_reference_target_type'] = $variables['element']['#items']->getItemDefinition()->getSetting('target_type');
   $paragraph_uuid = $variables['element']['#object']->toArray()['uuid'][0]['value'];
@@ -1684,11 +1684,11 @@ function visitsalone_preprocess_field__block_content__mt_media_tabs_block(&$vari
         $variables['items'][$key]['tab_item_data']['id'] = Html::getUniqueId($paragraph_item->id());
       }
       if ($paragraph_item->hasTranslation($current_language_id)) {
-        $video_field = $paragraph_item->getTranslation($current_language_id)->get('field_mt_media_video')->view();
-        $media_image = $paragraph_item->getTranslation($current_language_id)->toArray()['field_mt_media_image'];
+        $video_field = $paragraph_item->getTranslation($current_language_id)->get('field_tp_media_video')->view();
+        $media_image = $paragraph_item->getTranslation($current_language_id)->toArray()['field_tp_media_image'];
       } else {
-        $media_image = $paragraph_item->toArray()['field_mt_media_image'];
-        $video_field = $paragraph_item->get('field_mt_media_video')->view();
+        $media_image = $paragraph_item->toArray()['field_tp_media_image'];
+        $video_field = $paragraph_item->get('field_tp_media_video')->view();
       }
       if (!empty($media_image[0])) {
         $file = File::load($media_image[0]['target_id']);

@@ -49,37 +49,37 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       <div class="feature">
-        {% if paragraph.field_mt_if_icon.value|render %}
-          {% if paragraph.field_mt_if_link.0.url %}
-            <a href="{{ paragraph.field_mt_if_link.0.url }}" class="feature__icon"><i class="fa {{ paragraph.field_mt_if_icon.value }}"><span class="sr-only">{{ paragraph.field_mt_if_icon.value }}</span></i></a>
+        {% if paragraph.field_tp_if_icon.value|render %}
+          {% if paragraph.field_tp_if_link.0.url %}
+            <a href="{{ paragraph.field_tp_if_link.0.url }}" class="feature__icon"><i class="fa {{ paragraph.field_tp_if_icon.value }}"><span class="sr-only">{{ paragraph.field_tp_if_icon.value }}</span></i></a>
           {% else %}
-            <span class="feature__icon"><i class="fa {{ paragraph.field_mt_if_icon.value }}"><span class="sr-only">{{ paragraph.field_mt_if_icon.value }}</span></i></span>
+            <span class="feature__icon"><i class="fa {{ paragraph.field_tp_if_icon.value }}"><span class="sr-only">{{ paragraph.field_tp_if_icon.value }}</span></i></span>
           {% endif %}
         {% endif %}
-        {% if content.field_mt_if_image|render %}
+        {% if content.field_tp_if_image|render %}
           <div class="feature__image">
-            {% if paragraph.field_mt_if_link.0.url %}
+            {% if paragraph.field_tp_if_link.0.url %}
               <div class="overlay-container">
                 <span class="overlay overlay--colored">
-                  <a class="overlay-target-link" href="{{ paragraph.field_mt_if_link.0.url }}"></a>
+                  <a class="overlay-target-link" href="{{ paragraph.field_tp_if_link.0.url }}"></a>
                 </span>
-                {{ content.field_mt_if_image }}
+                {{ content.field_tp_if_image }}
               </div>
             {% else %}
-              {{ content.field_mt_if_image }}
+              {{ content.field_tp_if_image }}
             {% endif %}
           </div>
         {% endif %}
-        {% if paragraph.field_mt_if_title.value|render %}
-          {% if paragraph.field_mt_if_link.0.url %}
-            <h5 class="feature__title"><a href="{{ paragraph.field_mt_if_link.0.url }}">{{ paragraph.field_mt_if_title.value }}</a></h5>
+        {% if paragraph.field_tp_if_title.value|render %}
+          {% if paragraph.field_tp_if_link.0.url %}
+            <h5 class="feature__title"><a href="{{ paragraph.field_tp_if_link.0.url }}">{{ paragraph.field_tp_if_title.value }}</a></h5>
           {% else %}
-            <h5 class="feature__title">{{ paragraph.field_mt_if_title.value }}</h5>
+            <h5 class="feature__title">{{ paragraph.field_tp_if_title.value }}</h5>
           {% endif %}
         {% endif %}
-        {{ content|without('field_mt_if_icon', 'field_mt_if_link', 'field_mt_if_title', 'field_mt_if_image') }}
-        {% if paragraph.field_mt_if_link.0.url and paragraph.field_mt_if_link.title %}
-          <div class="feature__link"><a class="button" href="paragraph.field_mt_if_link.0.url">{{ paragraph.field_mt_if_link.title }}</a></div>
+        {{ content|without('field_tp_if_icon', 'field_tp_if_link', 'field_tp_if_title', 'field_tp_if_image') }}
+        {% if paragraph.field_tp_if_link.0.url and paragraph.field_tp_if_link.title %}
+          <div class="feature__link"><a class="button" href="paragraph.field_tp_if_link.0.url">{{ paragraph.field_tp_if_link.title }}</a></div>
         {% endif %}
       </div>
     {% endblock %}

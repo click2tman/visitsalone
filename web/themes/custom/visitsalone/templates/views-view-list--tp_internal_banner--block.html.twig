@@ -28,7 +28,7 @@
     <{{ list.type }}{{ list.attributes }}>
 
       {% for row in rows %}
-        <li{{ row.attributes }} data-transition="{{ mt_setting.rs_slideshow_internal_effect }}" data-slotamount="default" data-masterspeed="default" data-title="{{ row.content['#row'].node__field_mt_banner_image_field_mt_banner_image_title }}">
+        <li{{ row.attributes }} data-transition="{{ mt_setting.rs_slideshow_internal_effect }}" data-slotamount="default" data-masterspeed="default" data-title="{{ row.content['#row'].node__field_tp_banner_image_field_tp_banner_image_title }}">
 
           {{ row.content }}
 
@@ -42,7 +42,7 @@
             data-height="full">
           </div>
 
-          {% if row.content['#row'].node__field_mt_banner_image_field_mt_banner_image_title %}
+          {% if row.content['#row'].node__field_tp_banner_image_field_tp_banner_image_title %}
             <div class="tp-caption tp-caption--transparent-background"
               data-x="[center,center,center,center]"
               data-y="[center,center,center,center]"
@@ -57,7 +57,7 @@
               data-transform_in="y:[-100%];sX:1;sY:1;o:0;s:1000;e:Power4.easeInOut;"
               data-transform_out="y:[100%];o:0;s:1000;e:Power2.easeInOut;">
                 <div class="tp-caption__title">
-                  {{ row.content['#row'].node__field_mt_banner_image_field_mt_banner_image_title }}
+                  {{ row.content['#row'].node__field_tp_banner_image_field_tp_banner_image_title }}
                 </div>
             </div>
           {% endif %}

@@ -6,9 +6,9 @@
  */
 #}
 {% block meta_area %}
-  {% if content.field_mt_member_photo|render %}
+  {% if content.field_tp_member_photo|render %}
     <div class="photo-container">
-      {{ content.field_mt_member_photo }}
+      {{ content.field_tp_member_photo }}
     </div>
   {% endif %}
   {{ title_prefix }}
@@ -18,8 +18,8 @@
     </h2>
   {% endif %}
   {{ title_suffix }}
-  {% if content.field_mt_subtitle|render %}
-    {{ content.field_mt_subtitle }}
+  {% if content.field_tp_subtitle|render %}
+    {{ content.field_tp_subtitle }}
   {% endif %}
   {% if display_submitted %}
     <div class="node__meta">
@@ -38,5 +38,5 @@
 {% endblock %}
 {% block content %}
   {{ attach_library('visitsalone/node-team-member') }}
-  {{ content|without('field_mt_member_photo','field_mt_subtitle') }}
+  {{ content|without('field_tp_member_photo','field_tp_subtitle') }}
 {% endblock %}

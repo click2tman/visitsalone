@@ -28,24 +28,24 @@
       {{ metadata }}
     </div>
   {% endif %}
-  {% if content.field_mt_location|render or content.field_mt_people|render or content.field_mt_cabins|render or content.field_queen_beds|render or content.field_king_beds|render %}
+  {% if content.field_tp_location|render or content.field_tp_people|render or content.field_tp_cabins|render or content.field_queen_beds|render or content.field_king_beds|render %}
   	<div class="yacht-info">
-      {% if content.field_mt_location|render %}
+      {% if content.field_tp_location|render %}
         <div class="yacht-location">
-          <i class="fa fa-map-marker"></i> {{ node.field_mt_location.value }}
+          <i class="fa fa-map-marker"></i> {{ node.field_tp_location.value }}
         </div>
       {% endif %}
-      {% if content.field_mt_people|render or content.field_mt_cabins|render or content.field_queen_beds|render or content.field_king_beds|render %}
+      {% if content.field_tp_people|render or content.field_tp_cabins|render or content.field_queen_beds|render or content.field_king_beds|render %}
       <div class="yacht-people-and-cabins">
-        {% if content.field_mt_people|render %}
+        {% if content.field_tp_people|render %}
           <div class="yacht-item yacht-people">
-            <i class="fa fa-user"></i> {{ node.field_mt_people.value }} {% trans %}People{% endtrans %}
+            <i class="fa fa-user"></i> {{ node.field_tp_people.value }} {% trans %}People{% endtrans %}
           </div>
         {% endif %}
-        {% if content.field_mt_cabins|render and node.field_mt_cabins.value != 0 %}
+        {% if content.field_tp_cabins|render and node.field_tp_cabins.value != 0 %}
           <div class="yacht-item yacht-cabins">
-            <i class="fa fa-bed"></i> {{ node.field_mt_cabins.value }}
-              {% if node.field_mt_cabins.value == 1 %}
+            <i class="fa fa-bed"></i> {{ node.field_tp_cabins.value }}
+              {% if node.field_tp_cabins.value == 1 %}
                 {% trans %}Twin Bed{% endtrans %}
               {% else %}
                 {% trans %}Twin Beds{% endtrans %}
@@ -79,5 +79,5 @@
 {% endblock %}
 {% block content %}
   {{ attach_library('visitsalone/node-service') }}
-  {{ content|without('field_mt_location','field_mt_people','field_mt_cabins','field_queen_beds','field_king_beds') }}
+  {{ content|without('field_tp_location','field_tp_people','field_tp_cabins','field_queen_beds','field_king_beds') }}
 {% endblock %}

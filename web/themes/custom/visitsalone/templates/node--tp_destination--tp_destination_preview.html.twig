@@ -43,7 +43,7 @@
         </header>
       </div>
       {% block node_side_first %}
-        {% if content.field_mt_destinations|render %}
+        {% if content.field_tp_destinations|render %}
         <div class="
           {% if content.field_image|render %}
             col-md-6
@@ -51,7 +51,7 @@
             col-md-12
           {% endif %}">
             <div class="node__side-content clearfix">
-              {{ content.field_mt_destinations }}
+              {{ content.field_tp_destinations }}
             </div>
         </div>
         {% endif %}
@@ -59,7 +59,7 @@
       {% block node_side_second %}
         {% if content.field_image|render %}
           <div class="
-            {% if content.field_mt_destinations|render %}
+            {% if content.field_tp_destinations|render %}
               col-md-6
             {% else %}
               col-md-12
@@ -75,7 +75,7 @@
       {{ attach_library('visitsalone/node-destination') }}
       {{ attach_library('visitsalone/node-view-mode-destination-preview') }}
       <div{{ content_attributes.addClass('node__main-content', 'clearfix') }}>
-        {{ content|without('comment', 'field_image', 'field_mt_destinations', 'links') }}
+        {{ content|without('comment', 'field_image', 'field_tp_destinations', 'links') }}
       </div>
     {% endblock %}
   </div>

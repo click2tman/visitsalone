@@ -28,14 +28,14 @@
       {{ metadata }}
     </div>
   {% endif %}
-  {% if content.field_mt_location|render or content.field_mt_date|render %}
+  {% if content.field_tp_location|render or content.field_tp_date|render %}
     <div class="node__destination-info">
-      {{ content.field_mt_location }}
-      {{ content.field_mt_date }}
+      {{ content.field_tp_location }}
+      {{ content.field_tp_date }}
   	</div>
   {% endif %}
 {% endblock %}
 {% block content %}
   {{ attach_library('visitsalone/node-destination') }}
-  {{ content|without('field_mt_date','field_mt_location') }}
+  {{ content|without('field_tp_date','field_tp_location') }}
 {% endblock %}

@@ -3,7 +3,7 @@
  * @file
  * VisitSalone's theme override for the block entity refernece field for the tabs powered custom block
  *
- * @see visitsalone_preprocess_field__field_mt_content_tabs()
+ * @see visitsalone_preprocess_field__field_tp_content_tabs()
  */
 #}
 {%
@@ -29,7 +29,7 @@
     {% for item in items %}
       <li class="{{ loop.first ? ' active' : '' }}">
         <a href="#tab-id-{{loop.index}}" data-toggle="tab">
-          {{ item.content['#paragraph'].get('field_mt_tab_title').value }}
+          {{ item.content['#paragraph'].get('field_tp_tab_title').value }}
         </a>
       </li>
     {% endfor %}

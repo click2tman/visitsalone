@@ -48,10 +48,10 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {% if paragraph.field_mt_ra_is_availalbe.value !=0 %}
-        <i class="amenities--fa-icon fa fa-check"></i>{{ paragraph.field_mt_ra_amenity.value }}
+      {% if paragraph.field_tp_ra_is_availalbe.value !=0 %}
+        <i class="amenities--fa-icon fa fa-check"></i>{{ paragraph.field_tp_ra_amenity.value }}
       {% else %}
-          <div class="muted"><i class="amenities--fa-icon fa fa-times"></i>{{ paragraph.field_mt_ra_amenity.value }}</div>
+          <div class="muted"><i class="amenities--fa-icon fa fa-times"></i>{{ paragraph.field_tp_ra_amenity.value }}</div>
       {% endif %}
     {% endblock %}
   </div>

@@ -3,7 +3,7 @@
  * @file
  * VisitSalone's theme override for the content collapses field
  *
- * @see visitsalone_preprocess_field__field_mt_content_collapses()
+ * @see visitsalone_preprocess_field__field_tp_content_collapses()
  */
 #}
 {%
@@ -31,7 +31,7 @@
         <div class="panel-heading panel-heading--trigger-icon" role="tab" id="heading-id-{{loop.index}}">
           <div class="panel-title">
             <a class="{{ loop.first ? '' : ' collapsed' }}" data-toggle="collapse" data-parent="#mt-content-collapse" href="#collapse-id-{{loop.index}}" aria-expanded="true" aria-controls="collapse-id-{{loop.index}}">
-              {{ item.content['#paragraph'].get('field_mt_collapse_title').value }}
+              {{ item.content['#paragraph'].get('field_tp_collapse_title').value }}
             </a>
           </div>
         </div>
