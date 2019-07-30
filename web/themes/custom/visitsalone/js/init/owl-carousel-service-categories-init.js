@@ -1,7 +1,7 @@
 (function ($, Drupal, drupalSettings) {
   Drupal.behaviors.mtowlCarouselServiceCategories = {
     attach: function (context, settings) {
-      $(context).find('.mt-carousel-service-categories').once('mtowlCarouselServiceCategoriesInit').each(function() {
+      $(context).find('.tp-carousel-service-categories').once('mtowlCarouselServiceCategoriesInit').each(function() {
         $(this).owlCarousel({
           items: 1,
           responsive:{

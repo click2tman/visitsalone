@@ -1,7 +1,7 @@
 (function ($, Drupal, drupalSettings) {
   Drupal.behaviors.mtMagnificPopupFieldDestinationPreview = {
     attach: function (context, settings) {
-      $(context).find('.mt-carousel-destination-preview').once('mtMagnificPopupFieldDestinationPreviewInit').each(function() {
+      $(context).find('.tp-carousel-destination-preview').once('mtMagnificPopupFieldDestinationPreviewInit').each(function() {
         $(this).find('.owl-item:not(.cloned) .image-popup').magnificPopup({
           type:"image",
           removalDelay: 300,

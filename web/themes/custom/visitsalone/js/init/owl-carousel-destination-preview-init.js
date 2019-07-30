@@ -1,7 +1,7 @@
 (function ($, Drupal, drupalSettings) {
   Drupal.behaviors.mtowlCarouselDestinationPreview = {
     attach: function (context, settings) {
-      $(context).find('.mt-carousel-destination-preview').once('mtowlCarouselDestinationPreviewInit').each(function() {
+      $(context).find('.tp-carousel-destination-preview').once('mtowlCarouselDestinationPreviewInit').each(function() {
         $(this).owlCarousel({
           items: 1,
           responsive:{
