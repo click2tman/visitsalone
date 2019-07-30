@@ -1,0 +1,83 @@
+{#
+/**
+ * @file
+ * VisitSalones's theme implementation to display a Service node.
+ */
+#}
+
+{% extends "node.html.twig" %}
+{% block meta_area %}
+  {{ title_prefix }}
+  {% if not page %}
+    <h2{{ title_attributes.addClass('node__title') }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% if display_submitted %}
+    <div class="node__meta">
+      {{ author_picture }}
+      <span{{ author_attributes.addClass('node__submitted-info') }}>
+        {% trans %}
+          <span class="node__submitted-info-text">By</span> {{ author_name }} on
+          <span class="node__submitted-date">
+            {{ date }}
+          </span>
+        {% endtrans %}
+      </span>
+      {{ metadata }}
+    </div>
+  {% endif %}
+  {% if content.field_mt_location|render or content.field_mt_people|render or content.field_mt_cabins|render or content.field_queen_beds|render or content.field_king_beds|render %}
+  	<div class="yacht-info">
+      {% if content.field_mt_location|render %}
+        <div class="yacht-location">
+          <i class="fa fa-map-marker"></i> {{ node.field_mt_location.value }}
+        </div>
+      {% endif %}
+      {% if content.field_mt_people|render or content.field_mt_cabins|render or content.field_queen_beds|render or content.field_king_beds|render %}
+      <div class="yacht-people-and-cabins">
+        {% if content.field_mt_people|render %}
+          <div class="yacht-item yacht-people">
+            <i class="fa fa-user"></i> {{ node.field_mt_people.value }} {% trans %}People{% endtrans %}
+          </div>
+        {% endif %}
+        {% if content.field_mt_cabins|render and node.field_mt_cabins.value != 0 %}
+          <div class="yacht-item yacht-cabins">
+            <i class="fa fa-bed"></i> {{ node.field_mt_cabins.value }}
+              {% if node.field_mt_cabins.value == 1 %}
+                {% trans %}Twin Bed{% endtrans %}
+              {% else %}
+                {% trans %}Twin Beds{% endtrans %}
+              {% endif %}
+          </div>
+        {% endif %}
+        {% if content.field_queen_beds|render and node.field_queen_beds.value != 0 %}
+          <div class="yacht-item yacht-cabins">
+            <i class="fa fa-bed"></i> {{ node.field_queen_beds.value }}
+              {% if node.field_queen_beds.value == 1 %}
+                {% trans %}Queen Bed{% endtrans %}
+              {% else %}
+                {% trans %}Queen Beds{% endtrans %}
+              {% endif %}
+          </div>
+        {% endif %}
+        {% if content.field_king_beds|render and node.field_king_beds.value != 0 %}
+          <div class="yacht-item yacht-cabins">
+            <i class="fa fa-bed"></i> {{ node.field_king_beds.value }}
+              {% if node.field_king_beds.value == 1 %}
+                {% trans %}King Bed{% endtrans %}
+              {% else %}
+                {% trans %}King Beds{% endtrans %}
+              {% endif %}
+          </div>
+        {% endif %}
+      </div>
+      {% endif %}
+  	</div>
+  {% endif %}
+{% endblock %}
+{% block content %}
+  {{ attach_library('visitsalone/node-service') }}
+  {{ content|without('field_mt_location','field_mt_people','field_mt_cabins','field_queen_beds','field_king_beds') }}
+{% endblock %}

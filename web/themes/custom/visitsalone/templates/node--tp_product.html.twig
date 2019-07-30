@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * VisitSalone's theme implementation to display a Product node.
+ */
+#}
+
+{% extends "node.html.twig" %}
+{% block content %}
+  {{ attach_library('visitsalone/node-product') }}
+  {{ content }}
+{% endblock %}
