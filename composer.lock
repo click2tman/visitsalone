@@ -3268,17 +3268,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "1.18.0",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "8.x-1.18"
+                "reference": "8.x-1.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.18.zip",
-                "reference": "8.x-1.18",
-                "shasum": "3414d069866d379023bf30f11c172ac69acff30a"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.19.zip",
+                "reference": "8.x-1.19",
+                "shasum": "d409f9978a8ab153ab1bc15be0d3d4a1be378a38"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -3290,8 +3290,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.18",
-                    "datestamp": "1565345585",
+                    "version": "8.x-1.19",
+                    "datestamp": "1566735488",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
