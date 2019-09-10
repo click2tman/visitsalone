@@ -3269,17 +3269,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "1.19.0",
+            "version": "1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "8.x-1.19"
+                "reference": "8.x-1.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.19.zip",
-                "reference": "8.x-1.19",
-                "shasum": "d409f9978a8ab153ab1bc15be0d3d4a1be378a38"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-8.x-1.20.zip",
+                "reference": "8.x-1.20",
+                "shasum": "ccb5aa9eb3c9dc91228d29293e61fb91def97532"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -3291,8 +3291,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.19",
-                    "datestamp": "1566735488",
+                    "version": "8.x-1.20",
+                    "datestamp": "1568051586",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9398,13 +9398,13 @@
             "authors": [
                 {
                     "name": "Justin Bishop",
-                    "role": "Developer",
-                    "email": "jubishop@gmail.com"
+                    "email": "jubishop@gmail.com",
+                    "role": "Developer"
                 },
                 {
                     "name": "Anthon Pang",
-                    "role": "Fork Maintainer",
-                    "email": "apang@softwaredevelopment.ca"
+                    "email": "apang@softwaredevelopment.ca",
+                    "role": "Fork Maintainer"
                 }
             ],
             "description": "PHP WebDriver for Selenium 2",
