@@ -3010,27 +3010,28 @@
         },
         {
             "name": "drupal/file_browser",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/file_browser.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/file_browser-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "1afdbfac4531e0d74838c7bbb63ebf42bbe0f655"
+                "url": "https://ftp.drupal.org/files/projects/file_browser-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "18f85c02508885afeec50f74fd3b997b7cd577fe"
             },
             "require": {
-                "drupal/core": "*",
-                "drupal/dropzonejs": "*",
+                "drupal/core": "~8",
+                "drupal/dropzonejs": "^2",
                 "drupal/dropzonejs_eb_widget": "*",
-                "drupal/entity_browser": "*",
-                "drupal/entity_embed": "*"
+                "drupal/embed": "^1",
+                "drupal/entity_browser": "^2 || ^1",
+                "drupal/entity_embed": "^1"
             },
             "require-dev": {
-                "drupal/ctools": "*"
+                "drupal/coder": "~8.3"
             },
             "type": "drupal-module",
             "extra": {
@@ -3038,8 +3039,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1493226843",
+                    "version": "8.x-1.2",
+                    "datestamp": "1569940086",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3048,7 +3049,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0"
             ],
             "authors": [
                 {
@@ -3056,7 +3057,7 @@
                     "homepage": "https://www.drupal.org/user/2582268"
                 }
             ],
-            "description": "Provides a default Entity Browser for files, using Masonry and Imagesloaded.",
+            "description": "This module provides a default Entity Browser that lets you browse and select your files in a nice-looking, mobile-ready Masonry based interface, and upload files using the Dropzonejs module.",
             "homepage": "https://www.drupal.org/project/file_browser",
             "support": {
                 "source": "https://git.drupalcode.org/project/file_browser"
